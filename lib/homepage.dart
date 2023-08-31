@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import 'languages/english.dart';
-
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -15,7 +12,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("${'title'.tr}"),
+        title: Text('title'.tr),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: Center(
@@ -30,27 +27,27 @@ class _HomeState extends State<Home> {
               children: [
                 ElevatedButton(
                   onPressed: () {
-                    Get.updateLocale(Locale("en-Us"));
+                    Get.updateLocale(const Locale("en-Us"));
                   },
-                  child: Text("English"),
+                  child: const Text("English"),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Get.updateLocale(Locale("gu"));
+                    Get.updateLocale(const Locale("gu"));
                   },
-                  child: Text("ગુજરાતી"),
+                  child: const Text("ગુજરાતી"),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    Get.updateLocale(Locale("hi"));
+                    Get.updateLocale(const Locale("hi"));
                   },
-                  child: Text("हिंदी"),
+                  child: const Text("हिंदी"),
                 ),
               ],
             ),
